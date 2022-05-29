@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <h1>Kauno autoservisas</h1>
+  <p>Sveiki atvykę į geriausia servisą Kaune!</p>
+  <p>Šiuo metu turime:</p>
+  <ul>
+    <li><strong>Automobilių:</strong> {{ automobilių_kiekis }}</li>
+    <li><strong>Užsakymų:</strong> {{ užsakymų_kiekis }}</li>
+    <li><strong>Paslaugų:</strong> {{ paslaugų_kiekis }}</li>
+  </ul>
+{% endblock %}

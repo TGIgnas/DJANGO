@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <h1>Automobiliai</h1>
+  <p>Mūsų servise esantis automobiliai:</p>
+  {% for užsakymas in užsakymai %}
+    <li><a href="{{ užsakymas.id }}">{{ užsakymas.automobilis }} {{ automobiliomodelis.markė }}</a></li>
+  {% endfor %}
+{% endblock %}

@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="container">
+    <p><strong>Automobilis:</strong> {{ užsakymas.automobilis }}</p>
+    <p><strong>Data:</strong> {{ užsakymas.data }}</p>
+    <h4>Atliekami darbai:</h4>
+    {% for eilute in užsakymas.eilutes.all %}
+      <hr>
+        <p><strong>Paslauga:</strong> {{ eilute.paslauga }}  <strong>Kiekis:</strong> {{ eilute.kiekis }}<strong>    Kaina:</strong> {{ eilute.kaina }} <strong> </p>
+    {% endfor %}
+  </div>
+
+{% endblock %}
